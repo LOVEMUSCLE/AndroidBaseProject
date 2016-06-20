@@ -17,7 +17,7 @@ import com.zju.gislab.baseproject.personneltrain.view.HrFragment;
 import butterknife.BindView;
 
 public class MainActivity extends BaseFragmentActivity {
-//jsjsk
+
 
     @BindView(R.id.ib_shouye)
     ImageView ibShouye;
