@@ -3,10 +3,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:id="@+id/layout_home">
+    android:id="@+id/rl_homepage_globe">
 
     <ListView
-        android:id="@+id/list_homepage"
+        android:id="@+id/lv_homepage_country_data"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 </RelativeLayout>
