@@ -3,7 +3,6 @@ package com.zju.gislab.baseproject.lab.view;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 
 import com.zju.gislab.baseproject.R;
 import com.zju.gislab.baseproject.base.BaseFragment;
@@ -20,16 +19,14 @@ import butterknife.BindView;
  */
 public class LabFragment extends BaseFragment implements ILabView, View.OnClickListener {
 
-    @BindView(R.id.button_sync_get)
+    @BindView(R.id.btn_lab_sync_get)
     Button syncGetButton;
-    @BindView(R.id.button_asyn_get)
+    @BindView(R.id.btn_lab_asyn_get)
     Button asynGetButton;
-    @BindView(R.id.button_sync_post)
+    @BindView(R.id.btn_lab_sync_post)
     Button syncPostButton;
-    @BindView(R.id.button_asyn_post)
+    @BindView(R.id.btn_lab_asyn_post)
     Button asynPostButton;
-    @BindView(R.id.text_response_show)
-    TextView responseShowText;
 
     private ILabPresenter labPresenter;
 

@@ -35,10 +35,10 @@ import butterknife.BindView;
 public class HomePageFragment extends BaseFragment implements IHomePageView, AdapterView.OnItemClickListener {
 
 
-    @BindView(R.id.list_homepage)
-    ListView listHomepage;
-    @BindView(R.id.layout_home)
-    RelativeLayout viewGroup;
+    @BindView(R.id.lv_homepage_country_data)
+    ListView lvShowCountryData;
+    @BindView(R.id.rl_homepage_globe)
+    RelativeLayout rlGlobeView;
 
     private IHomePagePresenter homePagePresenter;
     List<String> datas = new ArrayList<>();
@@ -52,17 +52,17 @@ public class HomePageFragment extends BaseFragment implements IHomePageView, Ada
 
     @Override
     protected void initAllMembersView(Bundle savedInstanceState) {
-        listHomepage.setOnItemClickListener(this);
+        lvShowCountryData.setOnItemClickListener(this);
         //init
         View loadingView = LayoutInflater.from(getActivity()).inflate(R.layout.item_empty_view, null);
 
         RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT, RelativeLayout.LayoutParams.MATCH_PARENT);
         layoutParams.addRule(RelativeLayout.CENTER_IN_PARENT);
-        viewGroup.addView(loadingView, layoutParams);
-        listHomepage.setEmptyView(loadingView);
+        rlGlobeView.addView(loadingView, layoutParams);
+        lvShowCountryData.setEmptyView(loadingView);
 
         adapter = new ArrayAdapter<>(this.getContext(), android.R.layout.simple_list_item_1, datas);
-        listHomepage.setAdapter(adapter);
+        lvShowCountryData.setAdapter(adapter);
         homePagePresenter = new HomePagePresenterImpl(this);
     }
 

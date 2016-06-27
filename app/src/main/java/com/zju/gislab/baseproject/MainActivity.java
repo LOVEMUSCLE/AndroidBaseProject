@@ -18,37 +18,18 @@ import butterknife.BindView;
 
 public class MainActivity extends BaseFragmentActivity {
 
-
-    @BindView(R.id.ib_shouye)
-    ImageView ibShouye;
-    @BindView(R.id.tv_shouye)
-    TextView tvShouye;
-    @BindView(R.id.re_shouye)
-    RelativeLayout reShouye;
-    @BindView(R.id.ib_lab)
-    ImageView ibLab;
-    @BindView(R.id.tv_lab)
-    TextView tvLab;
-    @BindView(R.id.re_lab)
-    RelativeLayout reLab;
-    @BindView(R.id.ib_hangye)
-    ImageView ibHangye;
-    @BindView(R.id.tv_hangye)
-    TextView tvHangye;
-    @BindView(R.id.re_hangye)
-    RelativeLayout reHangye;
-    @BindView(R.id.ib_hr)
-    ImageView ibHr;
-    @BindView(R.id.tv_hr)
-    TextView tvHr;
-    @BindView(R.id.re_hr)
-    RelativeLayout reHr;
-    @BindView(R.id.main_bottom)
-    LinearLayout mainBottom;
-    @BindView(R.id.view_temp)
-    View viewTemp;
-    @BindView(R.id.fragment_container)
-    RelativeLayout fragmentContainer;
+    @BindView(R.id.rl_main_homepage)
+    RelativeLayout rlHomepageSwitch;
+    @BindView(R.id.rl_main_lab)
+    RelativeLayout rlLabSwitch;
+    @BindView(R.id.rl_main_industry_app)
+    RelativeLayout rlIndustrySwitch;
+    @BindView(R.id.rl_main_personnel_train)
+    RelativeLayout rlPersonnelTrainSwitch;
+    @BindView(R.id.ll_main_bottom)
+    LinearLayout llMainBottom;
+    @BindView(R.id.rl_main_fragment_container)
+    RelativeLayout rlFragmentContainer;
 
 
     // 当前fragment的index
@@ -99,10 +80,10 @@ public class MainActivity extends BaseFragmentActivity {
             hrFragment = new HrFragment();
             fragments = new Fragment[]{homePageFragment,labFragment,hangYeFragment,hrFragment};
 
-            addFragment(R.id.fragment_container,homePageFragment,homePageFragment.getTag());
-            addFragment(R.id.fragment_container,labFragment,labFragment.getTag());
-            addFragment(R.id.fragment_container,hangYeFragment,hangYeFragment.getTag());
-            addFragment(R.id.fragment_container,hrFragment,hrFragment.getTag());
+            addFragment(R.id.rl_main_fragment_container,homePageFragment,homePageFragment.getTag());
+            addFragment(R.id.rl_main_fragment_container,labFragment,labFragment.getTag());
+            addFragment(R.id.rl_main_fragment_container,hangYeFragment,hangYeFragment.getTag());
+            addFragment(R.id.rl_main_fragment_container,hrFragment,hrFragment.getTag());
             hideFragment(labFragment);
             hideFragment(hangYeFragment);
             hideFragment(hrFragment);
@@ -115,7 +96,7 @@ public class MainActivity extends BaseFragmentActivity {
 
     @Override
     protected int getFragmentContentId() {
-        return R.id.fragment_container;
+        return R.id.rl_main_fragment_container;
     }
 
 
@@ -130,16 +111,16 @@ public class MainActivity extends BaseFragmentActivity {
 
     public void onTabClicked(View view) {
         switch (view.getId()) {
-            case R.id.re_shouye:
+            case R.id.rl_main_homepage:
                 index = 0;
                 break;
-            case R.id.re_lab:
+            case R.id.rl_main_lab:
                 index = 1;
                 break;
-            case R.id.re_hangye:
+            case R.id.rl_main_industry_app:
                 index = 2;
                 break;
-            case R.id.re_hr:
+            case R.id.rl_main_personnel_train:
                 index = 3;
                 break;
 
@@ -147,7 +128,7 @@ public class MainActivity extends BaseFragmentActivity {
         if (currentTabIndex != index) {
             hideFragment(fragments[currentTabIndex]);
             if (!fragments[index].isAdded()){
-                addFragment(R.id.fragment_container,fragments[index],fragments[index].getTag());
+                addFragment(R.id.rl_main_fragment_container,fragments[index],fragments[index].getTag());
             }
             showFragment(fragments[index]);
         }

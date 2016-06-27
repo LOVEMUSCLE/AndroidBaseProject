@@ -1,22 +1,22 @@
 [
     {
-        "merged": "/Users/hejing/AndroidStudioProjects/BaseProject/app/build/intermediates/res/merged/debug/mipmap-mdpi-v4/ic_launcher.png",
-        "source": "/Users/hejing/AndroidStudioProjects/BaseProject/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+        "merged": "/Users/hornkyin/cloud repository/AndroidBaseProject/app/build/intermediates/res/merged/debug/mipmap-mdpi-v4/main_activity_shouye.png",
+        "source": "/Users/hornkyin/cloud repository/AndroidBaseProject/app/src/main/res/mipmap-mdpi/main_activity_shouye.png"
     },
     {
-        "merged": "/Users/hejing/AndroidStudioProjects/BaseProject/app/build/intermediates/res/merged/debug/mipmap-mdpi-v4/main_activity_hangye.png",
-        "source": "/Users/hejing/AndroidStudioProjects/BaseProject/app/src/main/res/mipmap-mdpi/main_activity_hangye.png"
+        "merged": "/Users/hornkyin/cloud repository/AndroidBaseProject/app/build/intermediates/res/merged/debug/mipmap-mdpi-v4/main_activity_hangye.png",
+        "source": "/Users/hornkyin/cloud repository/AndroidBaseProject/app/src/main/res/mipmap-mdpi/main_activity_hangye.png"
     },
     {
-        "merged": "/Users/hejing/AndroidStudioProjects/BaseProject/app/build/intermediates/res/merged/debug/mipmap-mdpi-v4/main_activity_hr.png",
-        "source": "/Users/hejing/AndroidStudioProjects/BaseProject/app/src/main/res/mipmap-mdpi/main_activity_hr.png"
+        "merged": "/Users/hornkyin/cloud repository/AndroidBaseProject/app/build/intermediates/res/merged/debug/mipmap-mdpi-v4/main_activity_lab.png",
+        "source": "/Users/hornkyin/cloud repository/AndroidBaseProject/app/src/main/res/mipmap-mdpi/main_activity_lab.png"
     },
     {
-        "merged": "/Users/hejing/AndroidStudioProjects/BaseProject/app/build/intermediates/res/merged/debug/mipmap-mdpi-v4/main_activity_shouye.png",
-        "source": "/Users/hejing/AndroidStudioProjects/BaseProject/app/src/main/res/mipmap-mdpi/main_activity_shouye.png"
+        "merged": "/Users/hornkyin/cloud repository/AndroidBaseProject/app/build/intermediates/res/merged/debug/mipmap-mdpi-v4/main_activity_hr.png",
+        "source": "/Users/hornkyin/cloud repository/AndroidBaseProject/app/src/main/res/mipmap-mdpi/main_activity_hr.png"
     },
     {
-        "merged": "/Users/hejing/AndroidStudioProjects/BaseProject/app/build/intermediates/res/merged/debug/mipmap-mdpi-v4/main_activity_lab.png",
-        "source": "/Users/hejing/AndroidStudioProjects/BaseProject/app/src/main/res/mipmap-mdpi/main_activity_lab.png"
+        "merged": "/Users/hornkyin/cloud repository/AndroidBaseProject/app/build/intermediates/res/merged/debug/mipmap-mdpi-v4/ic_launcher.png",
+        "source": "/Users/hornkyin/cloud repository/AndroidBaseProject/app/src/main/res/mipmap-mdpi/ic_launcher.png"
     }
 ]

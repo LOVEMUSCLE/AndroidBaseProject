@@ -9,7 +9,7 @@
     tools:context="com.zju.gislab.baseproject.MainActivity">
 
     <LinearLayout
-        android:id="@+id/main_bottom"
+        android:id="@+id/ll_main_bottom"
         android:layout_width="match_parent"
         android:layout_height="54dp"
         android:layout_alignParentBottom="true"
@@ -18,7 +18,7 @@
         android:orientation="horizontal" >
 
         <RelativeLayout
-            android:id="@+id/re_shouye"
+            android:id="@+id/rl_main_homepage"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -26,7 +26,7 @@
             android:padding="3dp" >
 
             <ImageView
-                android:id="@+id/ib_shouye"
+                android:id="@+id/iv_main_homepage_image"
                 android:layout_width="wrap_content"
                 android:layout_height="28dp"
                 android:layout_centerHorizontal="true"
@@ -36,10 +36,10 @@
                 android:src="@mipmap/main_activity_shouye" />
 
             <TextView
-                android:id="@+id/tv_shouye"
+                android:id="@+id/iv_main_homepage_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/ib_shouye"
+                android:layout_below="@id/iv_main_homepage_image"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="3dp"
                 android:text="首页"
@@ -49,7 +49,7 @@
         </RelativeLayout>
 
         <RelativeLayout
-            android:id="@+id/re_lab"
+            android:id="@+id/rl_main_lab"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -57,7 +57,7 @@
             android:padding="3dp" >
 
             <ImageView
-                android:id="@+id/ib_lab"
+                android:id="@+id/iv_main_lab_image"
                 android:layout_width="wrap_content"
                 android:layout_height="28dp"
                 android:layout_centerHorizontal="true"
@@ -67,10 +67,10 @@
                 android:src="@mipmap/main_activity_lab" />
 
             <TextView
-                android:id="@+id/tv_lab"
+                android:id="@+id/tv_main_lab_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/ib_lab"
+                android:layout_below="@id/iv_main_lab_image"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="3dp"
                 android:text="实验室"
@@ -80,7 +80,7 @@
         </RelativeLayout>
 
         <RelativeLayout
-            android:id="@+id/re_hangye"
+            android:id="@+id/rl_main_industry_app"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -88,7 +88,7 @@
             android:padding="3dp" >
 
             <ImageView
-                android:id="@+id/ib_hangye"
+                android:id="@+id/iv_main_industry_image"
                 android:layout_width="wrap_content"
                 android:layout_height="28dp"
                 android:layout_centerHorizontal="true"
@@ -98,10 +98,10 @@
                 android:src="@mipmap/main_activity_hangye" />
 
             <TextView
-                android:id="@+id/tv_hangye"
+                android:id="@+id/tv_main_industry_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/ib_hangye"
+                android:layout_below="@id/iv_main_industry_image"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="3dp"
                 android:text="行业应用"
@@ -110,7 +110,7 @@
         </RelativeLayout>
 
         <RelativeLayout
-            android:id="@+id/re_hr"
+            android:id="@+id/rl_main_personnel_train"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -118,7 +118,7 @@
             android:padding="3dp" >
 
             <ImageView
-                android:id="@+id/ib_hr"
+                android:id="@+id/iv_main_personnel_image"
                 android:layout_width="wrap_content"
                 android:layout_height="28dp"
                 android:layout_centerHorizontal="true"
@@ -128,10 +128,10 @@
                 android:src="@mipmap/main_activity_hr" />
 
             <TextView
-                android:id="@+id/tv_hr"
+                android:id="@+id/tv_main_personnel_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/ib_hr"
+                android:layout_below="@id/iv_main_personnel_image"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="3dp"
                 android:text="人才培养"
@@ -141,15 +141,15 @@
     </LinearLayout>
 
     <View
-        android:id="@+id/view_temp"
+        android:id="@+id/view_main_temp"
         android:layout_width="match_parent"
         android:layout_height="0.1dp"
-        android:layout_above="@id/main_bottom"
+        android:layout_above="@id/ll_main_bottom"
         android:background="#d6d6d6" />
 
     <RelativeLayout
-        android:id="@+id/fragment_container"
+        android:id="@+id/rl_main_fragment_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@id/view_temp" />
+        android:layout_above="@id/view_main_temp" />
 </RelativeLayout>

@@ -2,7 +2,6 @@ package com.zju.gislab.baseproject.lab.presenter;
 
 import android.os.Bundle;
 import android.os.Handler;
-import android.os.Looper;
 import android.os.Message;
 import android.view.View;
 
@@ -13,8 +12,6 @@ import com.zju.gislab.baseproject.utils.OkHttpUtils;
 import com.zju.gislab.baseproject.utils.ToastUtils;
 
 import java.io.IOException;
-import java.util.HashMap;
-import java.util.Map;
 
 import okhttp3.Request;
 
@@ -48,7 +45,7 @@ public class LabPresenterImpl implements ILabPresenter {
     @Override
     public void onWidgetClicked(View v) {
         switch (v.getId()) {
-            case R.id.button_sync_get:
+            case R.id.btn_lab_sync_get:
                 new Thread(new Runnable() {
                     @Override
                     public void run() {
@@ -63,7 +60,7 @@ public class LabPresenterImpl implements ILabPresenter {
                     }
                 }).start();
                 break;
-            case R.id.button_asyn_get:
+            case R.id.btn_lab_asyn_get:
                 //<String>Object可以是自定义的Model类，会自行的将服务器请求到的JSON字符串解析成Model类对象
                 OkHttpUtils.getAsyn(GET_URL, new OkHttpUtils.ResultCallback<String>() {
                     @Override
@@ -79,7 +76,7 @@ public class LabPresenterImpl implements ILabPresenter {
                     }
                 });
                 break;
-            case R.id.button_sync_post:
+            case R.id.btn_lab_sync_post:
                 new Thread(new Runnable() {
                     @Override
                     public void run() {
@@ -96,7 +93,7 @@ public class LabPresenterImpl implements ILabPresenter {
                     }
                 }).start();
                 break;
-            case R.id.button_asyn_post:
+            case R.id.btn_lab_asyn_post:
                 OkHttpUtils.Param[] params = new OkHttpUtils.Param[0];
                 //Object可以是自定义的Model类，会自行的将服务器请求到的JSON字符串解析成Model类对象
                 OkHttpUtils.postAsyn(POST_URL, params, new OkHttpUtils.ResultCallback<Object>() {

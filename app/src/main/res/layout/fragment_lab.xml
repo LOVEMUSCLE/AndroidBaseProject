@@ -10,7 +10,7 @@
 
         <Button
             style="@style/Widget.AppCompat.Button.Colored"
-            android:id="@+id/button_sync_get"
+            android:id="@+id/btn_lab_sync_get"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
@@ -19,7 +19,7 @@
 
         <Button
             style="@style/Widget.AppCompat.Button.Colored"
-            android:id="@+id/button_asyn_get"
+            android:id="@+id/btn_lab_asyn_get"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
@@ -33,7 +33,7 @@
 
         <Button
             style="@style/Widget.AppCompat.Button.Colored"
-            android:id="@+id/button_sync_post"
+            android:id="@+id/btn_lab_sync_post"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
@@ -42,18 +42,12 @@
 
         <Button
             style="@style/Widget.AppCompat.Button.Colored"
-            android:id="@+id/button_asyn_post"
+            android:id="@+id/btn_lab_asyn_post"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:layout_weight="1"
             android:text="异步的POST请求" />
     </android.support.v7.widget.LinearLayoutCompat>
-
-    <TextView
-        android:id="@+id/text_response_show"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="5dp"/>
 
 </LinearLayout>
